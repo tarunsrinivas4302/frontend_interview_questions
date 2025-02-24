@@ -22,3 +22,13 @@ Questions Consists in this Repo
 18) Custom Hooks
 19) Tic Tac Toe Game
 20) Todo list 
+
+
+## Installation
+
+Install my-project with npm
+Create a folder in Our Local System and clone the repository you get all the codes and change the directory you want to run and use below commands 
+```bash
+  npm install 
+  npm run dev
+```
