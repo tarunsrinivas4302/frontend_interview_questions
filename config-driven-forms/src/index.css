@@ -1,0 +1,53 @@
+h1{
+  text-align: center;
+}
+
+form {
+  width: 500px;
+  margin: auto;
+  border: 1px solid #aaa;
+  padding: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 12px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+input {
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  width: 80%;
+  margin: 10px auto;
+  height: 30px;
+  padding: 10px;
+}
+select {
+  margin-bottom: 20px;
+  width: 70%;
+  padding: 10px;
+}
+textarea {
+  width: 400px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+button {
+  width: max-content;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+.primary {
+  background-color: #00f;
+  color: #fff;
+}
+.secondary {
+  background-color: #f00;
+  color: #fff;
+}

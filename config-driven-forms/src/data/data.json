@@ -1,0 +1,101 @@
+{
+    "title": "User Update Form",
+    "description": "Fill out this form to update the profile.",
+    "fields": [
+      {
+        "label": "Name",
+        "name": "name",
+        "placeholder": "Enter your full name",
+        "type": "text",
+        "validation": {
+          "required": true,
+          "maxLength": 50,
+          "errorMessage": "Name can't be empty and it can't be more than 50 characters."
+        }
+      },
+      {
+        "label": "Email",
+        "name": "email",
+        "placeholder": "Enter your email address",
+        "type": "email",
+        "validation": {
+          "required": true,
+          "pattern": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$",
+          "errorMessage": "Please enter a valid email address."
+        }
+      },
+      {
+        "label": "Phone Number",
+        "name": "number",
+        "placeholder": "Enter your mobile number",
+        "type": "number",
+        "validation": {
+          "required": false,
+          "pattern": "^\\d{10}$",
+          "maxLength" : 10,
+          "errorMessage": "Please enter a valid phone number."
+        }
+      },
+      {
+        "label": "Password",
+        "name": "password",
+        "placeholder": "Enter your password",
+        "type": "password",
+        "validation": {
+          "required": true,
+          "minLength": 8,
+          "errorMessage": "Password must be more than 8 characters."
+        }
+      },
+      {
+        "label": "Age",
+        "name": "age",
+        "placeholder": "Enter your age",
+        "type": "number",
+        "validation": {
+          "required": true,
+          "min": 1,
+          "max": 90,
+          "errorMessage": "Age must be between 1 and 90."
+        }
+      },
+      {
+        "label": "Gender",
+        "name": "gender",
+        "placeholder": "Enter your gender",
+        "type": "select",
+        "options": [
+          { "value": "", "label": "Select Gender" },
+          { "value": "male", "label": "Male" },
+          { "value": "female", "label": "Female" },
+          { "value": "other", "label": "Other" }
+        ],
+        "validation": {
+          "required": true,
+          "errorMessage": "Please select your gender."
+        }
+      },
+      {
+        "label": "Bio",
+        "name": "bio",
+        "placeholder": "Write something about yourself...",
+        "type": "textarea",
+        "row": 6,
+        "column": 60,
+        "validation": {
+          "required": true,
+          "maxLength": 300,
+          "errorMessage": "The bio can't be greater than 300 characters."
+        }
+      }
+    ],
+    "submitButton": {
+      "label": "Submit",
+      "color": "primary"
+    },
+    "cancelButton": {
+      "label": "Cancel",
+      "color": "secondary"
+    }
+  }
+  
