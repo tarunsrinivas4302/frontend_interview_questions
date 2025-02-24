@@ -1,0 +1,12 @@
+.stars__Component {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: max-content;
+  height: 30px;
+}
+.star {
+  display: inline-block;
+  margin: 0 2px;
+}
