@@ -11,7 +11,7 @@ Questions Consists in this Repo
 7) Auto Suggestion Component
 8) Multi Search
 9) VS Code File Explorer 
-10) Carousels
+10) EMI Calculator
 11) Grid Lights
 12) Memory Game
 13) Shopping Cart using useReducer & useState & useContext
@@ -22,7 +22,7 @@ Questions Consists in this Repo
 18) Custom Hooks
 19) Tic Tac Toe Game
 20) Todo list 
-
+21) Comment Threads
 
 ## Installation
 
