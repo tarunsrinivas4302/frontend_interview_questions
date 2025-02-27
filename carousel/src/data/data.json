@@ -1,0 +1,22 @@
+[
+    {
+        "image" : "images/img1.avif",
+        "caption" : "Caption 1"
+    },
+    {
+        "image" : "images/img2.avif",
+        "caption" : "Caption 2"
+    },
+    {
+        "image" : "images/img3.avif",
+        "caption" : "Caption 3"
+    },
+    {
+        "image" : "images/img4.avif",
+        "caption" : "Caption 4"
+    },
+    {
+        "image" : "images/img5.avif",
+        "caption" : "Caption 5"
+    }
+]
