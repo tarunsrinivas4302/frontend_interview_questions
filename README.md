@@ -9,7 +9,7 @@ Questions Consists in this Repo
 5) Page Progress
 6) Custom Progress Bar
 7) Auto Suggestion Component
-8) Multi Search
+8) Multi Search Tabs
 9) VS Code File Explorer 
 10) EMI Calculator
 11) Grid Lights
@@ -23,6 +23,7 @@ Questions Consists in this Repo
 19) Tic Tac Toe Game
 20) Todo list 
 21) Comment Threads
+22) Pagination
 
 ## Installation
 
