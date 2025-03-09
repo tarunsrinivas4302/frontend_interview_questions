@@ -1,0 +1,70 @@
+[
+    {
+        "id": 1,
+        "name": "public",
+        "isFolder": true,
+        "children": [
+            {
+                "id": 2,
+                "name": "vite.svg"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "src",
+        "isFolder": true,
+        "children": [
+            {
+                "id": 4,
+                "name": "components",
+                "isFolder": true,
+                "children": [
+                    {
+                        "id": 5,
+                        "name": "file-explorer.jsx"
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "name": "data",
+                "isFolder": true,
+                "children": [
+                    {
+                        "id": 7,
+                        "name": "data.json"
+                    }
+                ]
+            },
+            {
+                "id": 8,
+                "name": "App.jsx"
+            },
+            {
+                "id": 9,
+                "name": "index.html"
+            },
+            {
+                "id": 10,
+                "name": "main.js"
+            },
+            {
+                "id": 11,
+                "name": "vite.config.js"
+            },
+            {
+                "id": 12,
+                "name": "package.json"
+            },
+            {
+                "id": 13,
+                "name": "README.md"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "name": "index.html"
+    }
+]
