@@ -24,9 +24,25 @@ Questions Consists in this Repo
 20) Todo list 
 21) Comment Threads
 22) Pagination
+23) Selectable Grid
+24) Error Boundaries 
+
+### Javascript Interview Questions 
+01) LRU Cache 
+02) Task Runner
+03) Polyfills For Arrays Commonly Used Functions and function Pollyfills call , apply, bind
+04) PolyFills For Promises
+05) Deep Cloning 
+06) Traffic Lights
+07) Drag and Drop
+08) Retry API and API Limiter 
+09) Lazy Evaluator 
+10) Function Compose 
+11) Promise Methods PolyFill
+
+
 
 ## Installation
-
 Install my-project with npm
 Create a folder in Our Local System and clone the repository you get all the codes and change the directory you want to run and use below commands 
 ```bash
