@@ -1,0 +1,30 @@
+.folder{
+    width: max-content;
+    display: flex;
+    max-height: 30px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: large;
+    user-select: none;
+}
+
+button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+input {
+    margin: 10px auto 5px auto;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 300px;
+}
+/* p{margin-bottom: 0;} */
