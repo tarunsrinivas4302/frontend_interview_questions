@@ -6,9 +6,9 @@ Function Composition is the Process of combining multiple functions to produce a
 
 ### Q) Why is Function Composition Important ?
 
-✅ Code Reusablity - Small Functions can be reused in different contexts
-✅ Readablity - Instead of writing a large function , compose smaller functions to improve clarity
-✅ Debugging - Easier to Test and Debug small functions than large monolithic functions
+1. ✅ Code Reusablity - Small Functions can be reused in different contexts
+2. ✅ Readablity - Instead of writing a large function , compose smaller functions to improve clarity
+3. ✅ Debugging - Easier to Test and Debug small functions than large monolithic functions
 
 # 🛠 Function Composition in Action
 
