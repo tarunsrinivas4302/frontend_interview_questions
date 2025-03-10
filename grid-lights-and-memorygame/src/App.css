@@ -1,0 +1,117 @@
+
+/* Styles For Grid Lights*/
+
+.grid-lights-container{
+  width: max-content;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(var(--colsize) ,1fr);
+  grid-template-rows: repeat(var(--rowsize) ,1fr);
+  border: 1px solid;
+  gap: 20px;
+  padding: 10px;
+}
+
+
+.grid-lights-cell{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid;
+  cursor: pointer;
+}
+.activated{
+  background-color: green;
+}
+
+
+/* Style For Memory game */
+.game-grid{
+  width: max-content;
+  margin: 20px auto;
+  display: grid;
+  /* grid-template-columns: repeat(4 ,1fr); */
+  border: 1px solid;
+  gap: 20px;
+  padding: 10px;
+} 
+
+.game-cell{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid;
+  font-family: serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  cursor: pointer;
+  background-color: inherit;
+  transition: 0.5s background-color ease-in;
+}
+.inputs{
+  text-align: center;
+  margin: 20px auto;
+}
+label{
+  font-family: serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
+input {
+  padding: 8px;
+  width: 300px;
+  margin:auto;
+}
+
+.solved{
+  color: white;
+  background-color: rgb(9, 151, 9);
+  transition: 0.5s background-color ease-in;
+}
+
+.flipped{
+  color: white;
+  background-color: rgba(16, 16, 180, 0.795);
+  transition: 0.5s background-color  ease-in-out;
+
+}
+.reset{
+  background-color: red;
+  color: white;
+  margin-left: 20px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.won, .lost{
+  color: green;
+  font-size: 2rem;
+  text-align: center;
+  animation: infinite bounce 1.4s;
+}
+.moves{
+  font-size: 1.2rem;
+  margin-top: 15px;
+  
+}
+.lost{
+  color: red;
+}
+
+
+@keyframes bounce {
+  0%{
+    transform:  translateY(-25px);
+  }
+  100%{
+    transform: translateY(10px);
+  }
+}
