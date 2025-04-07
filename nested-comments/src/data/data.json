@@ -1,0 +1,40 @@
+[
+  {
+    "id": "c1",
+    "author": "Alice",
+    "content": "This is the first comment.",
+    "createdAt": "2025-04-07T12:00:00Z",
+    "replies": [
+      {
+        "id": "c1-1",
+        "author": "Bob",
+        "content": "Replying to Alice's comment.",
+        "createdAt": "2025-04-07T12:05:00Z",
+        "replies": [
+          {
+            "id": "c1-1-1",
+            "author": "Charlie",
+            "content": "Replying to Bob's reply.",
+            "createdAt": "2025-04-07T12:10:00Z",
+            "replies": []
+          }
+        ]
+      },
+      {
+        "id": "c1-2",
+        "author": "Diana",
+        "content": "Another reply to Alice.",
+        "createdAt": "2025-04-07T12:06:00Z",
+        "replies": []
+      }
+    ]
+  },
+  {
+    "id": "c2",
+    "author": "Eve",
+    "content": "This is a top-level comment by Eve.",
+    "createdAt": "2025-04-07T12:20:00Z",
+    "replies": []
+  }
+]
+
