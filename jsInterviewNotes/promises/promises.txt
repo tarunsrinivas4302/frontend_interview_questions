@@ -1,0 +1,124 @@
+====================================================================
+                    Promises 
+====================================================================
+
+Definition :: 
+============= 
+
+A Promise is an Object represents the eventual completion or failure of an async Operation and it's resulting value . 
+
+States ::
+==========
+
+A Promise is in One Of these states
+
+Pending   :: initial state, neither fulfilled nor rejected
+fulfilled :: meaning that the operation was completed succesfully
+rejected  :: meaning that the operation was failed
+
+                                      settled
+    pending                       |--------------------|                    |------->>| async actions | 
+  |----------|       |----------->>|.then(onFulfilment) |------------------>>|    
+  |          |                    |                    |                    | (return)-->>|         |
+  | Promise  |----->>|            | ------------------ |                    |----------->>|(pending)|
+  |          |       |                                                                    |---------|
+  |----------|       |---------->>|--------------------------|                            |         |
+                                  | .then(..., onRejection)  |   (return)                 | Promise |
+                                  |                          |-------------------------->>|         |
+                                  | .catch(onRejection)      |                            |---------|
+                                  |--------------------------|                            |         |
+                                                |
+                                                |                                         
+                                                |-------------->> | (error handling) | 
+
+Syntax ::       
+============
+let promise = new Promise(function(resolve, reject) {
+  // executor (the producing code, "singer")
+});
+
+The function passed to new Promise is called the executor. When new Promise is created, the executor runs automatically. It contains the producing code which should eventually produce the result. In terms of the analogy above: the executor is the “singer”.
+
+Its arguments resolve and reject are callbacks provided by JavaScript itself. Our code is only inside the executor.
+
+When the executor obtains the result, be it soon or late, doesn’t matter, it should call one of these callbacks:
+
+resolve(value) — if the job is finished successfully, with result value.
+reject(error) — if an error has occurred, error is the error object.
+
+
+
+
+=================================================================================
+        ******************** Promise APIS ******************** 
+=================================================================================
+
+
+
+Promise.all() :: 
+==================
+It's a static method that takes an iterable of promises and returns a single Promise this returned Promise fulfills when all input's promise fulfills when all of the input's promise fulfill (including when an empty iterable is passed) with an array of fulfillment values . It rejects if any of the promise rejects with its first rejection reason
+
+
+returns 
+========
+1) Already Fulfilled ::If the Iterable is empty, 
+2) Async Fulfilled ::  when all the promises in the given iterable fulfill. The fulfillment value is an array of fulfillment values, in the order of the promises passed, regardless of completion order. If the iterable passed is non-empty but contains no pending promises, the returned promise is still asynchronously (instead of synchronously) fulfilled.
+3) Asynchronously rejected, when any of the promises in the given iterable rejects. The rejection reason is the rejection reason of the first promise that was rejected.
+
+
+Promise.all() will reject immediately upon any of the input promises rejecting. 
+
+=====================================================================================================================================
+
+
+Promise.allSettled() :
+======================
+
+It's a Static method that takes an iterable of promises and returns a single Promise as a result . This returned Promise fulfills when all the input promises settle (including when an empty iterable is passed) , with an array of objects that describe the outcome of each promise 
+
+
+Returns  ::
+============
+
+Already fulfilled, if the iterable passed is empty.
+
+Asynchronously Fulfilled, :: when all the Promises given iterable have settled (either fulfilled or rejected) . the fulfillment value of an array of objects . each describing the outcome of one promise in the iterable , in the order of the Promise is passed , regardless of completion order . Each outcome object has the following properties 
+
+status :: A string is either fulfilled or rejected , indicating the eventual state of the promise
+-------
+
+value   :: Only present , if status is fulfilled, the value that the promise was fulfilled with 
+-------
+
+reason :: Only Present if the status is rejected . the reason that the promise was rejected
+
+=====================================================================================================================================
+
+Promise.any
+=================
+
+Promise.any static method that takes an iterable of promises as an input and returns a Single Promise. This returned a Promise fulfills when any one of the promise is fulfilled , with this first fulfilment value . It rejects when all of the promises reject (including an empty iterable is passed ) , with an AggeregateError Containing an array of rejection errors
+
+
+The Promise.any() method is useful for returning the first promise that fulfills . It short-circuits after a promise fulfills , so it does not wait for the other promise to be fulfilled
+
+Unlike Promise.all() which returns an array of fulfillment values , we only get one fulfillment value 
+
+
+Returns 
+
+Already rejected, if the iterable passed is empty.
+
+Asynchronously fulfilled, when any of the promises in the given iterable fulfills. The fulfillment value is the fulfillment value of the first promise that was fulfilled.
+
+Asynchronously rejected, when all of the promises in the given iterable reject. The rejection reason is an AggregateError containing an array of rejection reasons in its errors property. The errors are in the order of the promises passed, regardless of completion order. If the iterable passed is non-empty but contains no pending promises, the returned promise is still asynchronously (instead of synchronously) rejected.
+
+
+
+
+=====================================================================================================================================
+
+Promise.race() 
+
+
